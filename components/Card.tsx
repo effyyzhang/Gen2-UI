@@ -12,7 +12,11 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { FiPlus } from "react-icons/fi";
-const Card = ({ props }) => {
+import { PoemData } from "../lib/types";
+
+const Card = ({ data }: { data: PoemData }) => {
+  var lines: String[] = data.poem.split(", ");
+  console.log(lines);
   return (
     <Box>
       <Center>
@@ -25,10 +29,16 @@ const Card = ({ props }) => {
             borderRadius="xl"
             overflow="hidden"
           >
-            <Heading>{props.poem}</Heading>
-            <Text>{props.id}</Text>
+            <Heading size="lg">
+              {lines[0]},
+              <br />
+              {lines[1]},
+              <br />
+              {lines[2]}
+            </Heading>
+            <Text>{data.id}</Text>
           </Grid>
-          <Button leftIcon={<FiPlus />} size="lg">
+          <Button leftIcon={<FiPlus />} m="24px" size="lg" borderRadius="xl">
             Generate new
           </Button>
         </Flex>
