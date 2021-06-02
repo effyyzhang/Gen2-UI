@@ -19,7 +19,7 @@ exports.modules = {
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('[{"id":1,"poem":"summer rain, the last of the fireflies, go out."},{"id":2,"poem":"summer twilight, a red maple leaf, on the windshield."},{"id":3,"poem":"Heavenly Father, in your grace I trust, keep my heart and soul."},{"id":4,"poem":"The little girl, was silent, still."}]');
+module.exports = JSON.parse('[{"id":1,"poem":"summer rain, the last of the fireflies, go out.","address":"0xd6fcb38fd962d10903c2044c896613c44db501f6d81f3131754e972e9c85e780"},{"id":2,"poem":"summer twilight, a red maple leaf, on the windshield.","address":"0x1a4e7800dda5394b33505f486069145aa09296b4035fabf23975f4a707e980e9"},{"id":3,"poem":"Heavenly Father, in your grace I trust, keep my heart and soul.","address":"0x7f76073615f08812d4e221d86d5d4927d23ea06b01f817ce9097f5eb7a9c6dce"},{"id":4,"poem":"The little girl, was silent, still.","address":"0x6b7148f4703120668bf4cde07061a5936beadc728399124306aecfac7d8e6dab"}]');
 
 /***/ }),
 

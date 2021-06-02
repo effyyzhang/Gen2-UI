@@ -8,7 +8,7 @@
   "poem/[id].tsx -> ../../components/Card": {
     "id": "./components/Card.tsx",
     "files": [
-      "static/chunks/vendors-node_modules_react-icons_fi_index_esm_js.js",
+      "static/chunks/vendors-node_modules_gsap_MotionPathPlugin_js-node_modules_gsap_SplitText_js-node_modules_gsa-0e0d60.js",
       "static/chunks/components_Card_tsx.js"
     ]
   }

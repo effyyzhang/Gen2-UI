@@ -1,4 +1,5 @@
 export type PoemData = {
-  id: string;
+  id: number;
   poem: string;
+  address: string;
 };

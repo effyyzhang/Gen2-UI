@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js add react-icons --save
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js add gsap
 
 PATH: 
   /Library/Frameworks/Python.framework/Versions/3.8/bin:/Users/effy.zhang/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Users/effy.zhang/bin
@@ -38,6 +38,7 @@ npm manifest:
       "next": "^10.2.3",
       "react": "^17.0.2",
       "react-dom": "^17.0.2",
+      "react-icons": "^4.2.0",
       "swr": "^0.5.6"
     },
     "devDependencies": {
@@ -2443,6 +2444,11 @@ Lockfile:
       react-clientside-effect "^1.2.2"
       use-callback-ref "^1.2.1"
       use-sidecar "^1.0.1"
+  
+  react-icons@^4.2.0:
+    version "4.2.0"
+    resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/react-icons/-/react-icons-4.2.0.tgz#6dda80c8a8f338ff96a1851424d63083282630d0"
+    integrity sha1-bdqAyKjzOP+WoYUUJNYwgygmMNA=
   
   react-is@16.13.1, react-is@^16.7.0, react-is@^16.8.1:
     version "16.13.1"

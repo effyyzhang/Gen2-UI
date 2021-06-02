@@ -34,6 +34,39 @@ module.exports = require("@chakra-ui/react");;
 
 /***/ }),
 
+/***/ "gsap":
+/*!***********************!*\
+  !*** external "gsap" ***!
+  \***********************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = require("gsap");;
+
+/***/ }),
+
+/***/ "gsap/MotionPathPlugin":
+/*!****************************************!*\
+  !*** external "gsap/MotionPathPlugin" ***!
+  \****************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = require("gsap/MotionPathPlugin");;
+
+/***/ }),
+
+/***/ "gsap/SplitText":
+/*!*********************************!*\
+  !*** external "gsap/SplitText" ***!
+  \*********************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = require("gsap/SplitText");;
+
+/***/ }),
+
 /***/ "next/dynamic":
 /*!*******************************!*\
   !*** external "next/dynamic" ***!
