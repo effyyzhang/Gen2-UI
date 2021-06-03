@@ -31,9 +31,14 @@ const Card = ({ data }: { data: PoemData }) => {
             h="640px"
             borderRadius="xl"
             overflow="hidden"
+            bgGradient={[
+              "linear(to-tr, teal.300,yellow.400)",
+              "linear(to-t, blue.200, teal.500)",
+              "linear(to-b, orange.100, purple.300)",
+            ]}
           >
-            <Address data={data} />
-            <Heading size="lg" padding={8}>
+            <Address address={data.address} />
+            <Heading size="lg" padding={8} color="Purple 700">
               {lines[0]},
               <br />
               {lines[1]},

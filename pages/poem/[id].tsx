@@ -4,7 +4,6 @@ import dynamic from "next/dynamic";
 const Card = dynamic(() => import(`../../components/Card`));
 import useSWR from "swr";
 import { useRouter } from "next/router";
-import poem from "../api/poem/[id]";
 import { PoemData } from "../../lib/types";
 
 const fetcher = async (url: string) => {
@@ -19,6 +18,7 @@ const fetcher = async (url: string) => {
 const PoemComponent = () => {
   const router = useRouter();
   const { id } = router.query;
+  console.log(router.query);
   const result = useSWR(`/api/poem/${id}`, fetcher);
   const data: PoemData = result.data;
   const error: Error = result.error;

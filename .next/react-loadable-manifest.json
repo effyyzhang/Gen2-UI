@@ -4,12 +4,5 @@
     "files": [
       "static/chunks/node_modules_next_dist_client_dev_noop_js.js"
     ]
-  },
-  "poem/[id].tsx -> ../../components/Card": {
-    "id": "./components/Card.tsx",
-    "files": [
-      "static/chunks/vendors-node_modules_gsap_MotionPathPlugin_js-node_modules_gsap_SplitText_js-node_modules_gsa-0e0d60.js",
-      "static/chunks/components_Card_tsx.js"
-    ]
   }
 }

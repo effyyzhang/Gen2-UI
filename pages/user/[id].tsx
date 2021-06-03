@@ -40,6 +40,7 @@ const UserData = () => {
   if (!data) {
     return <Alert status="info">Loading...</Alert>;
   }
+
   return (
     <SimpleGrid columns={2} width="2xs" spacingY={4}>
       <Text fontWeight="bold" marginRight={4}>
