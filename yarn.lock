@@ -720,6 +720,11 @@
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha1-ju2YLi7m9/TkTCU+EpYpgHke/UY=
 
+"@fontsource/anonymous-pro@^4.4.2":
+  version "4.4.2"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@fontsource/anonymous-pro/-/anonymous-pro-4.4.2.tgz#388972b993b36857c2c9a93284bd89fcf2a4aef8"
+  integrity sha1-OIlyuZOzaFfCyakyhL2J/PKkrvg=
+
 "@hapi/accept@5.0.2":
   version "5.0.2"
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@hapi/accept/-/accept-5.0.2.tgz#ab7043b037e68b722f93f376afb05e85c0699523"
