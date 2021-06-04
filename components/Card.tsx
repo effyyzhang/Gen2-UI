@@ -9,7 +9,6 @@ import {
   SimpleGrid,
   Heading,
   Alert,
-  AspectRatio,
   Center,
 } from "@chakra-ui/react";
 import { FiPlus } from "react-icons/fi";

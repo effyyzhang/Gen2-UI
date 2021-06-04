@@ -7,7 +7,6 @@ import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(MotionPathPlugin, SplitText);
-
 //prepare timeline
 const tl = gsap.timeline({
   paused: true,

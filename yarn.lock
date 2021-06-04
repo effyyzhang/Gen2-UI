@@ -9,12 +9,63 @@
   dependencies:
     "@babel/highlight" "^7.10.4"
 
-"@babel/code-frame@^7.0.0":
+"@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13":
   version "7.12.13"
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@babel/code-frame/-/code-frame-7.12.13.tgz#dcfc826beef65e75c50e21d3837d7d95798dd658"
   integrity sha1-3PyCa+72XnXFDiHTg319lXmN1lg=
   dependencies:
     "@babel/highlight" "^7.12.13"
+
+"@babel/generator@^7.14.2":
+  version "7.14.3"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@babel/generator/-/generator-7.14.3.tgz#0c2652d91f7bddab7cccc6ba8157e4f40dcedb91"
+  integrity sha1-DCZS2R973at8zMa6gVfk9A3O25E=
+  dependencies:
+    "@babel/types" "^7.14.2"
+    jsesc "^2.5.1"
+    source-map "^0.5.0"
+
+"@babel/helper-annotate-as-pure@^7.12.13":
+  version "7.12.13"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@babel/helper-annotate-as-pure/-/helper-annotate-as-pure-7.12.13.tgz#0f58e86dfc4bb3b1fcd7db806570e177d439b6ab"
+  integrity sha1-D1jobfxLs7H819uAZXDhd9Q5tqs=
+  dependencies:
+    "@babel/types" "^7.12.13"
+
+"@babel/helper-create-class-features-plugin@^7.13.0":
+  version "7.14.4"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.14.4.tgz#abf888d836a441abee783c75229279748705dc42"
+  integrity sha1-q/iI2DakQavueDx1IpJ5dIcF3EI=
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.12.13"
+    "@babel/helper-function-name" "^7.14.2"
+    "@babel/helper-member-expression-to-functions" "^7.13.12"
+    "@babel/helper-optimise-call-expression" "^7.12.13"
+    "@babel/helper-replace-supers" "^7.14.4"
+    "@babel/helper-split-export-declaration" "^7.12.13"
+
+"@babel/helper-function-name@^7.14.2":
+  version "7.14.2"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@babel/helper-function-name/-/helper-function-name-7.14.2.tgz#397688b590760b6ef7725b5f0860c82427ebaac2"
+  integrity sha1-OXaItZB2C273cltfCGDIJCfrqsI=
+  dependencies:
+    "@babel/helper-get-function-arity" "^7.12.13"
+    "@babel/template" "^7.12.13"
+    "@babel/types" "^7.14.2"
+
+"@babel/helper-get-function-arity@^7.12.13":
+  version "7.12.13"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@babel/helper-get-function-arity/-/helper-get-function-arity-7.12.13.tgz#bc63451d403a3b3082b97e1d8b3fe5bd4091e583"
+  integrity sha1-vGNFHUA6OzCCuX4diz/lvUCR5YM=
+  dependencies:
+    "@babel/types" "^7.12.13"
+
+"@babel/helper-member-expression-to-functions@^7.13.12":
+  version "7.13.12"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@babel/helper-member-expression-to-functions/-/helper-member-expression-to-functions-7.13.12.tgz#dfe368f26d426a07299d8d6513821768216e6d72"
+  integrity sha1-3+No8m1CagcpnY1lE4IXaCFubXI=
+  dependencies:
+    "@babel/types" "^7.13.12"
 
 "@babel/helper-module-imports@^7.12.13":
   version "7.13.12"
@@ -23,10 +74,34 @@
   dependencies:
     "@babel/types" "^7.13.12"
 
-"@babel/helper-plugin-utils@^7.12.13":
+"@babel/helper-optimise-call-expression@^7.12.13":
+  version "7.12.13"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@babel/helper-optimise-call-expression/-/helper-optimise-call-expression-7.12.13.tgz#5c02d171b4c8615b1e7163f888c1c81c30a2aaea"
+  integrity sha1-XALRcbTIYVsecWP4iMHIHDCiquo=
+  dependencies:
+    "@babel/types" "^7.12.13"
+
+"@babel/helper-plugin-utils@^7.12.13", "@babel/helper-plugin-utils@^7.13.0":
   version "7.13.0"
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@babel/helper-plugin-utils/-/helper-plugin-utils-7.13.0.tgz#806526ce125aed03373bc416a828321e3a6a33af"
   integrity sha1-gGUmzhJa7QM3O8QWqCgyHjpqM68=
+
+"@babel/helper-replace-supers@^7.14.4":
+  version "7.14.4"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@babel/helper-replace-supers/-/helper-replace-supers-7.14.4.tgz#b2ab16875deecfff3ddfcd539bc315f72998d836"
+  integrity sha1-sqsWh13uz/89381Tm8MV9ymY2DY=
+  dependencies:
+    "@babel/helper-member-expression-to-functions" "^7.13.12"
+    "@babel/helper-optimise-call-expression" "^7.12.13"
+    "@babel/traverse" "^7.14.2"
+    "@babel/types" "^7.14.4"
+
+"@babel/helper-split-export-declaration@^7.12.13":
+  version "7.12.13"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@babel/helper-split-export-declaration/-/helper-split-export-declaration-7.12.13.tgz#e9430be00baf3e88b0e13e6f9d4eaf2136372b05"
+  integrity sha1-6UML4AuvPoiw4T5vnU6vITY3KwU=
+  dependencies:
+    "@babel/types" "^7.12.13"
 
 "@babel/helper-validator-identifier@^7.14.0":
   version "7.14.0"
@@ -41,6 +116,19 @@
     "@babel/helper-validator-identifier" "^7.14.0"
     chalk "^2.0.0"
     js-tokens "^4.0.0"
+
+"@babel/parser@^7.12.13", "@babel/parser@^7.14.2":
+  version "7.14.4"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@babel/parser/-/parser-7.14.4.tgz#a5c560d6db6cd8e6ed342368dea8039232cbab18"
+  integrity sha1-pcVg1tts2ObtNCNo3qgDkjLLqxg=
+
+"@babel/plugin-proposal-class-properties@^7.10.1":
+  version "7.13.0"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.13.0.tgz#146376000b94efd001e57a40a88a525afaab9f37"
+  integrity sha1-FGN2AAuU79AB5XpAqIpSWvqrnzc=
+  dependencies:
+    "@babel/helper-create-class-features-plugin" "^7.13.0"
+    "@babel/helper-plugin-utils" "^7.13.0"
 
 "@babel/plugin-syntax-jsx@^7.12.13":
   version "7.12.13"
@@ -63,6 +151,29 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/template@^7.12.13":
+  version "7.12.13"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@babel/template/-/template-7.12.13.tgz#530265be8a2589dbb37523844c5bcb55947fb327"
+  integrity sha1-UwJlvooliduzdSOETFvLVZR/syc=
+  dependencies:
+    "@babel/code-frame" "^7.12.13"
+    "@babel/parser" "^7.12.13"
+    "@babel/types" "^7.12.13"
+
+"@babel/traverse@^7.14.2":
+  version "7.14.2"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@babel/traverse/-/traverse-7.14.2.tgz#9201a8d912723a831c2679c7ebbf2fe1416d765b"
+  integrity sha1-kgGo2RJyOoMcJnnH678v4UFtdls=
+  dependencies:
+    "@babel/code-frame" "^7.12.13"
+    "@babel/generator" "^7.14.2"
+    "@babel/helper-function-name" "^7.14.2"
+    "@babel/helper-split-export-declaration" "^7.12.13"
+    "@babel/parser" "^7.14.2"
+    "@babel/types" "^7.14.2"
+    debug "^4.1.0"
+    globals "^11.1.0"
+
 "@babel/types@7.8.3":
   version "7.8.3"
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@babel/types/-/types-7.8.3.tgz#5a383dffa5416db1b73dedffd311ffd0788fb31c"
@@ -72,7 +183,7 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@babel/types@^7.13.12":
+"@babel/types@^7.12.13", "@babel/types@^7.13.12", "@babel/types@^7.14.2", "@babel/types@^7.14.4":
   version "7.14.4"
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@babel/types/-/types-7.14.4.tgz#bfd6980108168593b38b3eb48a24aa026b919bc0"
   integrity sha1-v9aYAQgWhZOziz60iiSqAmuRm8A=
@@ -1337,6 +1448,13 @@ debug@2:
   dependencies:
     ms "2.0.0"
 
+debug@^4.1.0:
+  version "4.3.1"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/debug/-/debug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
+  integrity sha1-8NIpxQXgxtjEmsVT0bE9wYP2su4=
+  dependencies:
+    ms "2.1.2"
+
 define-properties@^1.1.3:
   version "1.1.3"
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/define-properties/-/define-properties-1.1.3.tgz#cf88da6cbee26fe6db7094f61d870cbd84cee9f1"
@@ -1608,6 +1726,11 @@ glob-to-regexp@^0.4.1:
   version "0.4.1"
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/glob-to-regexp/-/glob-to-regexp-0.4.1.tgz#c75297087c851b9a578bd217dd59a92f59fe546e"
   integrity sha1-x1KXCHyFG5pXi9IX3VmpL1n+VG4=
+
+globals@^11.1.0:
+  version "11.12.0"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/globals/-/globals-11.12.0.tgz#ab8795338868a0babd8525758018c2a7eb95c42e"
+  integrity sha1-q4eVM4hooLq9hSV1gBjCp+uVxC4=
 
 graceful-fs@^4.1.2:
   version "4.2.6"
@@ -1892,6 +2015,11 @@ jest-worker@27.0.0-next.5:
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha1-GSA/tZmR35jjoocFDUZHzerzJJk=
 
+jsesc@^2.5.1:
+  version "2.5.2"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/jsesc/-/jsesc-2.5.2.tgz#80564d2e483dacf6e8ef209650a67df3f0c283a4"
+  integrity sha1-gFZNLkg9rPbo7yCWUKZ98/DCg6Q=
+
 json-parse-even-better-errors@^2.3.0:
   version "2.3.1"
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz#7c47805a94319928e05777405dc12e1f7a4ee02d"
@@ -1995,6 +2123,11 @@ ms@2.0.0:
   version "2.0.0"
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
   integrity sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
+
+ms@2.1.2:
+  version "2.1.2"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
+  integrity sha1-0J0fNXtEP0kzgqjrPM0YOHKuYAk=
 
 nanoid@^3.1.22:
   version "3.1.23"
@@ -2471,6 +2604,13 @@ react@^17.0.2:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
+reactjs-typing-effect@^1.0.8:
+  version "1.0.8"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/reactjs-typing-effect/-/reactjs-typing-effect-1.0.8.tgz#0e4442f600460c43df2fb86d7e895c33e7dacf7d"
+  integrity sha1-DkRC9gBGDEPfL7htfolcM+faz30=
+  dependencies:
+    "@babel/plugin-proposal-class-properties" "^7.10.1"
+
 readable-stream@^2.0.2, readable-stream@^2.3.3, readable-stream@^2.3.6:
   version "2.3.7"
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/readable-stream/-/readable-stream-2.3.7.tgz#1eca1cf711aef814c04f62252a36a62f6cb23b57"
@@ -2589,7 +2729,7 @@ source-map@0.8.0-beta.0:
   dependencies:
     whatwg-url "^7.0.0"
 
-source-map@^0.5.7:
+source-map@^0.5.0, source-map@^0.5.7:
   version "0.5.7"
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
   integrity sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=

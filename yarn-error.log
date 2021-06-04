@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js add @fontsource/Anonymous Pro
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js add reactjs-typing-effect
 
 PATH: 
   /Library/Frameworks/Python.framework/Versions/3.8/bin:/Users/effy.zhang/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Users/effy.zhang/bin
@@ -14,17 +14,8 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@fontsource%2fAnonymous: not_found
-      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:66987:18)
-      at Request.self.callback (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:140748:22)
-      at Request.emit (events.js:311:20)
-      at Request.<anonymous> (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:141720:10)
-      at Request.emit (events.js:311:20)
-      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:141642:12)
-      at Object.onceWrapper (events.js:417:28)
-      at IncomingMessage.emit (events.js:323:22)
-      at endReadableNT (_stream_readable.js:1204:12)
-      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+  Error: getaddrinfo ENOTFOUND artifactory.robot.car
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:64:26)
 
 npm manifest: 
   {
@@ -43,6 +34,7 @@ npm manifest:
       "@chakra-ui/react": "^1.6.3",
       "@emotion/react": "^11",
       "@emotion/styled": "^11",
+      "@fontsource/anonymous-pro": "^4.4.2",
       "framer-motion": "^4",
       "gsap": "npm:@gsap/shockingly",
       "next": "^10.2.3",
@@ -783,6 +775,11 @@ Lockfile:
     version "0.2.5"
     resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
     integrity sha1-ju2YLi7m9/TkTCU+EpYpgHke/UY=
+  
+  "@fontsource/anonymous-pro@^4.4.2":
+    version "4.4.2"
+    resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@fontsource/anonymous-pro/-/anonymous-pro-4.4.2.tgz#388972b993b36857c2c9a93284bd89fcf2a4aef8"
+    integrity sha1-OIlyuZOzaFfCyakyhL2J/PKkrvg=
   
   "@hapi/accept@5.0.2":
     version "5.0.2"
