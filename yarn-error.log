@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js add gsap
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js add framer-motion
 
 PATH: 
   /Library/Frameworks/Python.framework/Versions/3.8/bin:/Users/effy.zhang/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Users/effy.zhang/bin
@@ -35,10 +35,12 @@ npm manifest:
       "@emotion/react": "^11",
       "@emotion/styled": "^11",
       "framer-motion": "^4",
+      "gsap": "npm:@gsap/shockingly",
       "next": "^10.2.3",
       "react": "^17.0.2",
       "react-dom": "^17.0.2",
       "react-icons": "^4.2.0",
+      "react-transition-group": "^4.4.2",
       "swr": "^0.5.6"
     },
     "devDependencies": {
@@ -109,7 +111,7 @@ Lockfile:
     dependencies:
       regenerator-runtime "^0.13.4"
   
-  "@babel/runtime@^7.0.0", "@babel/runtime@^7.12.13", "@babel/runtime@^7.13.10", "@babel/runtime@^7.7.2":
+  "@babel/runtime@^7.0.0", "@babel/runtime@^7.12.13", "@babel/runtime@^7.13.10", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.7":
     version "7.14.0"
     resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@babel/runtime/-/runtime-7.14.0.tgz#46794bc20b612c5f75e62dd071e24dfd95f1cbe6"
     integrity sha1-RnlLwgthLF915i3QceJN/ZXxy+Y=
@@ -1424,6 +1426,14 @@ Lockfile:
       miller-rabin "^4.0.0"
       randombytes "^2.0.0"
   
+  dom-helpers@^5.0.1:
+    version "5.2.1"
+    resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/dom-helpers/-/dom-helpers-5.2.1.tgz#d9400536b2bf8225ad98fe052e029451ac40e902"
+    integrity sha1-2UAFNrK/giWtmP4FLgKUUaxA6QI=
+    dependencies:
+      "@babel/runtime" "^7.8.7"
+      csstype "^3.0.2"
+  
   domain-browser@4.19.0:
     version "4.19.0"
     resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/domain-browser/-/domain-browser-4.19.0.tgz#1093e17c0a17dbd521182fe90d49ac1370054af1"
@@ -1653,6 +1663,11 @@ Lockfile:
     version "4.2.6"
     resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/graceful-fs/-/graceful-fs-4.2.6.tgz#ff040b2b0853b23c3d31027523706f1885d76bee"
     integrity sha1-/wQLKwhTsjw9MQJ1I3BvGIXXa+4=
+  
+  "gsap@npm:@gsap/shockingly":
+    version "3.6.1"
+    resolved "https://npm.greensock.com/@gsap%2fshockingly/-/shockingly-3.6.1.tgz#6a0829e8df02e327da9927a8b0e45a67d34b98ba"
+    integrity sha512-tEWaJ2eP5jQPZfWXZv8SmlUxAUFJeiNIk1M47JTIF597gj7QQdILaNdhwa+Va2CCLMzO7w2noSeOhxoRVummqg==
   
   has-bigints@^1.0.1:
     version "1.0.1"
@@ -2487,6 +2502,16 @@ Lockfile:
       get-nonce "^1.0.0"
       invariant "^2.2.4"
       tslib "^1.0.0"
+  
+  react-transition-group@^4.4.2:
+    version "4.4.2"
+    resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/react-transition-group/-/react-transition-group-4.4.2.tgz#8b59a56f09ced7b55cbd53c36768b922890d5470"
+    integrity sha1-i1mlbwnO17VcvVPDZ2i5IokNVHA=
+    dependencies:
+      "@babel/runtime" "^7.5.5"
+      dom-helpers "^5.0.1"
+      loose-envify "^1.4.0"
+      prop-types "^15.6.2"
   
   react@^17.0.2:
     version "17.0.2"

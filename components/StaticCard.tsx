@@ -13,13 +13,13 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { FiPlus } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 //prepare text on path animation
 
 const StaticCard = () => {
   const poem: string = "summer rain, the last of the fireflies, go out.";
-  const address: string =
-    "0xd6fcb38fd962d10903c2044c896613c44db501f6d81f3131754e972e9c85e780";
+  const address: string = "0xfe35aa7bbd9f47b8369b0a6ea06d14e3f9855f9a";
   var lines: String[] = poem.split(", ");
   return (
     <Box>
@@ -29,10 +29,10 @@ const StaticCard = () => {
           <Grid
             bg="tomato"
             w="360px"
-            h="640px"
+            h="360px"
             borderRadius="xl"
             overflow="hidden"
-            bgGradient="linear(to-tr, green.200, pink.500)"
+            bgGradient="linear(to-tr, #fe35aa, #855f9a)"
           >
             <Flex padding={5} flexDirection="column" justifyContent="center">
               <Heading size="lg" color="Purple 700">
@@ -51,12 +51,17 @@ const StaticCard = () => {
             </Flex>
 
             <Box position="absolute" p="8px" opacity="0.6">
-              <svg width="344" height="624" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                width="344"
+                height="344
+              "
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <defs>
                   <path
                     id="s3"
                     d="
-                    M16,16 h300 a16,16 0 0 1 16,16 v552 a16,16 0 0 1 -16,16 h-300 a16,16 0 0 1 -16,-16 v-552 a16,16 0 0 1 16,-16 z"
+                    M16,16 h300 a16,16 0 0 1 16,16 v300 a16,16 0 0 1 -16,16 h-300 a16,16 0 0 1 -16,-16 v-300 a16,16 0 0 1 16,-16 z"
                     fill="green"
                     stroke="black"
                     stroke-width="3"
@@ -70,6 +75,7 @@ const StaticCard = () => {
               </svg>
             </Box>
           </Grid>
+
           <Button
             leftIcon={<FiPlus />}
             my={6}
