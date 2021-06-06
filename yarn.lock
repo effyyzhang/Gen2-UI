@@ -1737,6 +1737,10 @@ graceful-fs@^4.1.2:
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/graceful-fs/-/graceful-fs-4.2.6.tgz#ff040b2b0853b23c3d31027523706f1885d76bee"
   integrity sha1-/wQLKwhTsjw9MQJ1I3BvGIXXa+4=
 
+gsap@./gsap-bonus.tgz:
+  version "3.6.1"
+  resolved "./gsap-bonus.tgz#b0d1dbf3d78ca6b2196fc0f8810f0eec2ddc1586"
+
 "gsap@npm:@gsap/shockingly":
   version "3.6.1"
   resolved "https://npm.greensock.com/@gsap%2fshockingly/-/shockingly-3.6.1.tgz#6a0829e8df02e327da9927a8b0e45a67d34b98ba"

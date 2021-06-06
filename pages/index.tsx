@@ -1,11 +1,12 @@
 import { NextPage } from "next";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+import DemoCard from "../components/StaticCard";
 
 const IndexPage = () => {
   return (
     <>
-      <h1>hello Gen 2</h1>
-      <Link href="/about">About</Link>
+      <DemoCard />
     </>
   );
 };
