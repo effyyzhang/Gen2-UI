@@ -932,6 +932,22 @@
     prop-types "^15.7.2"
     tslib "^2.1.0"
 
+"@react-three/fiber@^6.2.2":
+  version "6.2.2"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@react-three/fiber/-/fiber-6.2.2.tgz#bced876201cb136e91d5b0891f31e5c740e1537c"
+  integrity sha1-vO2HYgHLE26R1bCJHzHlx0DhU3w=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    react-merge-refs "^1.1.0"
+    react-reconciler "^0.26.2"
+    react-three-fiber "0.0.0-deprecated"
+    react-use-measure "^2.0.4"
+    resize-observer-polyfill "^1.5.1"
+    scheduler "^0.20.2"
+    use-asset "^1.0.4"
+    utility-types "^3.10.0"
+    zustand "^3.5.1"
+
 "@types/lodash.mergewith@4.6.6":
   version "4.6.6"
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/@types/lodash.mergewith/-/lodash.mergewith-4.6.6.tgz#c4698f5b214a433ff35cb2c75ee6ec7f99d79f10"
@@ -1441,6 +1457,11 @@ data-uri-to-buffer@3.0.1:
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/data-uri-to-buffer/-/data-uri-to-buffer-3.0.1.tgz#594b8973938c5bc2c33046535785341abc4f3636"
   integrity sha1-WUuJc5OMW8LDMEZTV4U0GrxPNjY=
 
+debounce@^1.2.0:
+  version "1.2.1"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/debounce/-/debounce-1.2.1.tgz#38881d8f4166a5c5848020c11827b834bcb3e0a5"
+  integrity sha1-OIgdj0FmpcWEgCDBGCe4NLyz4KU=
+
 debug@2:
   version "2.6.9"
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -1623,6 +1644,11 @@ evp_bytestokey@^1.0.0, evp_bytestokey@^1.0.3:
     md5.js "^1.3.4"
     safe-buffer "^5.1.1"
 
+fast-deep-equal@^3.1.3:
+  version "3.1.3"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
+  integrity sha1-On1WtVnWy8PrUSMlJE5hmmXGxSU=
+
 fill-range@^7.0.1:
   version "7.0.1"
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/fill-range/-/fill-range-7.0.1.tgz#1919a6a7c75fe38b2c7c77e5198535da9acdda40"
@@ -1740,11 +1766,6 @@ graceful-fs@^4.1.2:
 gsap@./gsap-bonus.tgz:
   version "3.6.1"
   resolved "./gsap-bonus.tgz#b0d1dbf3d78ca6b2196fc0f8810f0eec2ddc1586"
-
-"gsap@npm:@gsap/shockingly":
-  version "3.6.1"
-  resolved "https://npm.greensock.com/@gsap%2fshockingly/-/shockingly-3.6.1.tgz#6a0829e8df02e327da9927a8b0e45a67d34b98ba"
-  integrity sha512-tEWaJ2eP5jQPZfWXZv8SmlUxAUFJeiNIk1M47JTIF597gj7QQdILaNdhwa+Va2CCLMzO7w2noSeOhxoRVummqg==
 
 has-bigints@^1.0.1:
   version "1.0.1"
@@ -2557,6 +2578,20 @@ react-is@16.13.1, react-is@^16.7.0, react-is@^16.8.1:
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=
 
+react-merge-refs@^1.1.0:
+  version "1.1.0"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/react-merge-refs/-/react-merge-refs-1.1.0.tgz#73d88b892c6c68cbb7a66e0800faa374f4c38b06"
+  integrity sha1-c9iLiSxsaMu3pm4IAPqjdPTDiwY=
+
+react-reconciler@^0.26.2:
+  version "0.26.2"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/react-reconciler/-/react-reconciler-0.26.2.tgz#bbad0e2d1309423f76cf3c3309ac6c96e05e9d91"
+  integrity sha1-u60OLRMJQj92zzwzCaxsluBenZE=
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    scheduler "^0.20.2"
+
 react-refresh@0.8.3:
   version "0.8.3"
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
@@ -2590,6 +2625,11 @@ react-style-singleton@^2.1.0:
     invariant "^2.2.4"
     tslib "^1.0.0"
 
+react-three-fiber@0.0.0-deprecated:
+  version "0.0.0-deprecated"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/react-three-fiber/-/react-three-fiber-0.0.0-deprecated.tgz#c737242487d824cf9520307308b7e4c4071a278f"
+  integrity sha1-xzckJIfYJM+VIDBzCLfkxAcaJ48=
+
 react-transition-group@^4.4.2:
   version "4.4.2"
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/react-transition-group/-/react-transition-group-4.4.2.tgz#8b59a56f09ced7b55cbd53c36768b922890d5470"
@@ -2599,6 +2639,13 @@ react-transition-group@^4.4.2:
     dom-helpers "^5.0.1"
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
+
+react-use-measure@^2.0.4:
+  version "2.0.4"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/react-use-measure/-/react-use-measure-2.0.4.tgz#cb675b36eaeaf3681b94d5f5e08b2a1e081fedc9"
+  integrity sha1-y2dbNurq82gblNX14IsqHggf7ck=
+  dependencies:
+    debounce "^1.2.0"
 
 react@^17.0.2:
   version "17.0.2"
@@ -2648,6 +2695,11 @@ regenerator-runtime@^0.13.4:
   version "0.13.7"
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/regenerator-runtime/-/regenerator-runtime-0.13.7.tgz#cac2dacc8a1ea675feaabaeb8ae833898ae46f55"
   integrity sha1-ysLazIoepnX+qrrriugziYrkb1U=
+
+resize-observer-polyfill@^1.5.1:
+  version "1.5.1"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
+  integrity sha1-DpAg3T0hAkRY1OvSfiPkAmmBBGQ=
 
 resolve-from@^4.0.0:
   version "4.0.0"
@@ -2906,6 +2958,11 @@ swr@^0.5.6:
   dependencies:
     dequal "2.0.2"
 
+three@^0.129.0:
+  version "0.129.0"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/three/-/three-0.129.0.tgz#f5e530bbc96eac5d5b4749cb5da886ef0d42f554"
+  integrity sha1-9eUwu8lurF1bR0nLXaiG7w1C9VQ=
+
 timers-browserify@2.0.12, timers-browserify@^2.0.4:
   version "2.0.12"
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/timers-browserify/-/timers-browserify-2.0.12.tgz#44a45c11fbf407f34f97bccd1577c652361b00ee"
@@ -3015,6 +3072,13 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
+use-asset@^1.0.4:
+  version "1.0.4"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/use-asset/-/use-asset-1.0.4.tgz#506caafc29f602890593799e58b577b70293a6e2"
+  integrity sha1-UGyq/Cn2AokFk3meWLV3twKTpuI=
+  dependencies:
+    fast-deep-equal "^3.1.3"
+
 use-callback-ref@^1.2.1, use-callback-ref@^1.2.3:
   version "1.2.5"
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/use-callback-ref/-/use-callback-ref-1.2.5.tgz#6115ed242cfbaed5915499c0a9842ca2912f38a5"
@@ -3065,6 +3129,11 @@ util@^0.11.0:
   integrity sha1-MjZzNyDsZLsn9uJvQhqqLhtYjWE=
   dependencies:
     inherits "2.0.3"
+
+utility-types@^3.10.0:
+  version "3.10.0"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/utility-types/-/utility-types-3.10.0.tgz#ea4148f9a741015f05ed74fd615e1d20e6bed82b"
+  integrity sha1-6kFI+adBAV8F7XT9YV4dIOa+2Cs=
 
 vm-browserify@1.1.2, vm-browserify@^1.0.1:
   version "1.1.2"
@@ -3138,3 +3207,8 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha1-ApTrPe4FAo0x7hpfosVWpqrxChs=
+
+zustand@^3.5.1:
+  version "3.5.2"
+  resolved "https://artifactory.robot.car/artifactory/api/npm/npm-virtual/zustand/-/zustand-3.5.2.tgz#cf162a8bd1d86475bf308bc856c4d02ff13fd53c"
+  integrity sha1-zxYqi9HYZHW/MIvIVsTQL/E/1Tw=

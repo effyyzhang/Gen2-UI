@@ -15,6 +15,7 @@
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@fontsource/anonymous-pro": "^4.4.2",
+    "@react-three/fiber": "^6.2.2",
     "framer-motion": "^4",
     "gsap": "./gsap-bonus.tgz",
     "next": "^10.2.3",
@@ -23,7 +24,8 @@
     "react-icons": "^4.2.0",
     "react-transition-group": "^4.4.2",
     "reactjs-typing-effect": "^1.0.8",
-    "swr": "^0.5.6"
+    "swr": "^0.5.6",
+    "three": "^0.129.0"
   },
   "devDependencies": {
     "@types/react": "^17.0.8",

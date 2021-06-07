@@ -7,8 +7,6 @@ import {
   Text,
   Spacer,
   Heading,
-  Alert,
-  AspectRatio,
   Center,
 } from "@chakra-ui/react";
 import { FiPlus } from "react-icons/fi";
@@ -18,48 +16,71 @@ import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap/dist/gsap";
 import { MotionPathPlugin } from "gsap/dist/MotionPathPlugin";
 import { SplitText } from "gsap/dist/SplitText";
+import StaticBg from "../components/StaticBg";
 
 gsap.registerPlugin(MotionPathPlugin, SplitText);
 const StaticCard = () => {
-  const poem: string = "Summer rain, the last of the fireflies, go out.";
+  const poem: string = "Summer rain, the last of the fireflies, go out";
   const address: string = "0x4adaf983349c49defe8d7a4686202d24b25d0ce3";
   const color1: string = "#".concat(address.slice(2, 8));
   const color2: string = "#".concat(address.slice(-6));
   const cardSize: number = 360;
   const textPath: string =
     "M30,15 h300 a16,16 0 0 1 16,16 v300 a16,16 0 0 1 -16,16 h-300 a16,16 0 0 1 -16,-16 v-300 a16,16 0 0 1 16,-16 z";
-  var lines: string[] = poem.split(", ");
+
   //ref
   let animatedText = useRef(null);
   let animatedAddress = useRef(null);
   let svgPath = useRef(null);
 
-  //typewriter animation
-  const typeWriter = () => {
-    (function _type(i = 0) {
-      if (i === poem.length) return;
-      animatedText.current.innerHTML = poem.substring(0, i + 1);
-      setTimeout(() => _type(i + 1), 100);
-    })();
-  };
+  //typewriter animation 2
+  var lines: String[] = poem.split(",");
+  var iSpeed = 50; // time delay of print out
+  var iIndex = 0; // start printing array at this posision
+  var iArrLength = lines[0].length; // the length of the text array
+  var iScrollAt = 6; // start scrolling up at this many lines
+
+  var iTextPos = 0; // initialise text position
+  var sContents = ""; // initialise contents variable
+  var iRow; // initialise current row
+
+  function typeWriter() {
+    sContents = " ";
+    iRow = Math.max(0, iIndex - iScrollAt);
+    var destination = animatedText.current;
+    while (iRow < iIndex) {
+      sContents += lines[iRow++] + "<br />";
+    }
+    destination.innerHTML = sContents + lines[iIndex].substring(0, iTextPos);
+    if (iTextPos++ == iArrLength) {
+      iTextPos = 0;
+      iIndex++;
+      if (iIndex != lines.length) {
+        iArrLength = lines[iIndex].length;
+        setTimeout(() => typeWriter(), 500);
+      }
+    } else {
+      setTimeout(() => typeWriter(), iSpeed);
+    }
+  }
+
   useEffect(() => {
     typeWriter();
   }, [animatedText]);
 
   //animate address
+  const tl = gsap.timeline({
+    paused: true,
+    // reversed: true,
+    onComplete: () => tl.restart(),
+  });
   const dur = 20;
   const each = dur * 0.01;
   function roundTo2(num) {
     return Math.round((num + Number.EPSILON) * 100) / 100;
   }
 
-  const hoverEffect = useEffect(() => {
-    const tl = gsap.timeline({
-      paused: true,
-      reversed: true,
-      onComplete: () => tl.restart(),
-    });
-
+  useEffect(() => {
     const splitText = new SplitText(animatedAddress.current, {
       type: "chars",
       charsClass: "letter",
@@ -85,24 +106,27 @@ const StaticCard = () => {
       });
       tl.add(tween, 0);
     });
-
-    tl.play();
   }, [animatedAddress]);
 
   return (
     <Box>
       <Center>
-        <Flex flexDirection="column" height="100vh">
+        <Flex flexDirection="column" height="100vh" id="container">
           <Spacer />
           <Grid
-            bg="tomato"
-            w={cardSize}
-            h={cardSize}
-            borderRadius="xl"
+            id="card"
+            bg="transparent"
+            boxSize={cardSize}
             overflow="hidden"
-            bgGradient={`linear(to-tr, ${color1}, ${color2})`}
+            onMouseEnter={() => tl.play()}
+            onMouseLeave={() => tl.pause()}
           >
-            <Flex padding={8} flexDirection="column" justifyContent="center">
+            <Flex
+              id="card-content"
+              padding={8}
+              flexDirection="column"
+              justifyContent="center"
+            >
               <Heading
                 ref={(el) => (animatedText.current = el)}
                 size="lg"
@@ -120,7 +144,12 @@ const StaticCard = () => {
               </Text>
             </Flex>
 
-            <Box boxSize={cardSize} position="absolute" opacity="0.6">
+            <Box
+              id="address-container"
+              boxSize={cardSize}
+              position="absolute"
+              opacity="0.6"
+            >
               <svg
                 width="100%"
                 height="100%"
@@ -133,6 +162,7 @@ const StaticCard = () => {
                 <path ref={(el) => (svgPath.current = el)} d={textPath} />
               </svg>
             </Box>
+            <StaticBg data={address} />
           </Grid>
           <Text
             fontSize="sm"

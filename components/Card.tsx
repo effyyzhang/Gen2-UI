@@ -26,7 +26,6 @@ const Card = ({ data }: { data: PoemData }) => {
           <Grid
             bg="tomato"
             w="360px"
-            h="640px"
             borderRadius="xl"
             overflow="hidden"
             bgGradient={[
