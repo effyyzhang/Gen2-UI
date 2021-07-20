@@ -5,11 +5,14 @@ import {
   Button,
   Grid,
   Text,
+  HStack,
+  Input,
   Spacer,
   SimpleGrid,
   Heading,
   Alert,
   Center,
+  VStack,
 } from "@chakra-ui/react";
 import { FiPlus } from "react-icons/fi";
 
@@ -31,38 +34,47 @@ const LandingPage = () => {
         <Center>
           <Flex flexDirection="column" height="100vh">
             <Spacer />
-            <Heading size="4xl" color="black">
-              {lines[0]},
-              <br />
-              {lines[1]}.
-            </Heading>
-            <Heading
-              size="4xl"
-              color="white"
-              textShadow = "
-              -1px -1px 0 #000,  
-              1px -1px 0 #000,
-              -1px 1px 0 #000,
-               1px 1px 0 #000;
-               "
-            >
-              {lines[2]}
-            </Heading>
+            <VStack align="stretch">
+              <Heading size="4xl" color="black">
+                {lines[0]},
+                <br />
+                {lines[1]}.
+              </Heading>
+              <Heading
+                size="4xl"
+                color="white"
+                textShadow="-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,1px 1px 0 #000;"
+              >
+                {lines[2]}
+              </Heading>
+            </VStack>
             <Spacer />
-            <Button
-              leftIcon={<FiPlus />}
-              my={6}
-              mx={12}
-              size="lg"
-              margin={0}
-              marginTop="40px"
-              borderRadius="full"
-              bg="#000"
-              color="#fff"
-              width="240px"
-            >
-              Join the Beta
-            </Button>
+            <HStack>
+              <Input
+                variant="outline"
+                color="#000"
+                focusBorderColor="#000"
+                borderRadius="full"
+                width="280px"
+                size="lg"
+                placeholder="Email address"
+              ></Input>
+              <Button
+                leftIcon={<FiPlus />}
+                my={6}
+                mx={12}
+                size="lg"
+                margin={0}
+                marginTop="40px"
+                borderRadius="full"
+                bg="#000"
+                color="#fff"
+                width="200px"
+              >
+                Join the Beta
+              </Button>
+            </HStack>
+
             <Spacer />
           </Flex>
         </Center>
