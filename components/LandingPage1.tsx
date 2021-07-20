@@ -35,7 +35,17 @@ const LandingPage = () => {
               {lines[0]},
               <br />
               {lines[1]}.
-              <br />
+            </Heading>
+            <Heading
+              size="4xl"
+              color="white"
+              textShadow = "
+              -1px -1px 0 #000,  
+              1px -1px 0 #000,
+              -1px 1px 0 #000,
+               1px 1px 0 #000;
+               "
+            >
               {lines[2]}
             </Heading>
             <Spacer />
